@@ -11,40 +11,39 @@ function verify() {
         var gênero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
-        if (fsex[0].checked) {
+           if (fsex[0].checked) {
             gênero = 'man'
             if (idade >= 0 && idade <= 10) {
                 //kid
-                img.setAttribute('src', 'foto-bebe-m.png')
+                img.setAttribute('src', './assets/foto-bebe-m.png')
              } else if (idade < 21) {
                 //young
-                img.setAttribute('src', 'foto-jovem-m.png')
+                img.setAttribute('src', './assets/foto-jovem-m.png')
               } else if (idade <50) {
                 //adult
-                img.setAttribute('src', 'foto-adulto-m.png')
+                img.setAttribute('src', './assets/foto-adulto-m.png')
                } else {
                 //elderly
-                img.setAttribute('src', 'foto-idoso-m.png')
+                img.setAttribute('src', './assets/foto-idoso-m.png')
             }
         } else if (fsex[1].checked) {
             gênero = 'woman'
             if (idade >= 0 && idade <= 10) {
                 //kid
-                img.setAttribute('src', 'foto-bebe-f.png')
+                img.setAttribute('src', './assets/foto-bebe-f.png')
              } else if (idade < 21) {
                 //young
-                img.setAttribute('src', 'foto-jovem-f.png')
+                img.setAttribute('src', './assets/foto-jovem-f.png')
               } else if (idade <50) {
                 //adult
-                img.setAttribute('src', 'foto-adulto-f.png')
+                img.setAttribute('src', './assets/foto-adulto-f.png')
                } else {
                 //elderly
-                img.setAttribute('src', 'foto-idoso-f.png')
+                img.setAttribute('src', './assets/foto-idoso-f.png')
             }
         }
         res.innerHTML = `You are a ${gênero} with ${idade} years old`
         res.style.textAlign = 'center'
         res.appendChild(img)
     }
-
 }
