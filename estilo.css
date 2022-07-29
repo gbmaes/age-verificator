@@ -2,15 +2,12 @@ body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 26%, rgba(0,212,255,1) 100%);
     font: normal 15pt Arial;
-
 }
-
 header {
     color: white;
     text-align: center;
 
 }
-
 section {
     background: white;
     border-radius: 10px;
@@ -20,7 +17,6 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
     
 }
-
 footer {
     color: white;
     text-align: center;
